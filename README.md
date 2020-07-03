@@ -9,16 +9,29 @@ Requires nodejs, npm and yarn installed.
 git clone https://github.com/hanspoo/apollo-basic
 
 ```
-cd apollo-server
+cd books-server
 npm install
 node index.js
 ```
 
-and go to http://localhost:4000
+...and go to http://localhost:4000
+
+Explore and query the schema, i.e, you can issue the query:
+
+```
+{
+  
+  books {
+    title
+    author
+  }
+}
+```
+
 
 in another terminal
 ```
-cd apollo-client
+cd books-client
 npm install
 yarn start
 ```
